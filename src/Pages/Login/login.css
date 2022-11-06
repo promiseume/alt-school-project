@@ -3,7 +3,10 @@
     font-size: 20px;
     line-height: 28px;
     color: rgb(84, 105, 212);
-    margin-bottom: 3rem;
+}
+.form-header{
+    display: flex;
+    align-content: center;
 }
 .forms-container{
 padding: 1rem 2rem;

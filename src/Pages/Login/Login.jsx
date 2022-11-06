@@ -23,10 +23,12 @@ const AddUserForm = ({fullName,setFullName,password,setPassword}) => {
     }, [token])
     return (
         <>
-           <div><AiOutlineArrowLeft onClick={()=> navigate(-1)} style={{fontSize:'20px'}}/></div>
         <div className={'login-container'}>
         <div className={'forms-container'}>
+            <div className='form-header'>
+        <AiOutlineArrowLeft onClick={()=> navigate(-1)} style={{fontSize:'20px'}}/>
             <h2>Sign up</h2>
+            </div>
             <form className="login-form">
                 <div className={'input-div'}>
                     <label className="form-label">Full name</label>
@@ -36,8 +38,8 @@ const AddUserForm = ({fullName,setFullName,password,setPassword}) => {
                     <label className="form-label">Password</label>
                     <input className="form-control input" value={password} onChange={(e) => handlePassword(e)}/>
                 </div>
-                <button disabled={!fullName} type="submit" onClick={(e) => onLogin(e)}>Submit</button>
-                {!fullName && !password && <p style={{color:'red'}}>You have to fill form before you can submit</p>}
+                <button disabled={!fullName && !password} type="submit" onClick={(e) => onLogin(e)}>Submit</button>
+                {!fullName && <p style={{color:'red'}}>Please fill the form</p>}
             </form>
         </div>
         </div>
