@@ -1,0 +1,26 @@
+#nav-content{
+    color:#ffff;
+    margin: 0 20px 0 20px;
+}
+#brand{
+    font-size: calc(1.3rem + .6vw);
+    font-weight: 700;
+    text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 50%);
+}
+#nav-nav p{
+    margin: 0;
+    color:#ffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#nav-nav a{
+    color:#ffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px){
+    #brand{
+        text-align: center;
+    }
+}

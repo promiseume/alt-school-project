@@ -1,0 +1,58 @@
+.pageError{
+   background-image: url(../../assets/404.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    top:0;
+    bottom:0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+   width: 100%;
+}
+.error-container{
+width:50%;
+ padding: 11rem 1rem;
+ margin-left: 30px;
+}
+.error-container h1{
+ margin-top: 0px;
+ margin-bottom: 10px;
+ font-family: Graphik, sans-serif;
+ color: #191919;
+ font-size: 50px;
+ line-height: 70px;
+ font-weight: 700;
+}
+.error-btn{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.error-btn button{
+ width: 70%;
+ padding:20px;
+ text-align: center;
+ margin: 10px;
+}
+@media(max-width:961px){
+ .error-container{
+  width:100%;
+  padding:1rem;
+  margin-left: 0;
+ }
+ .error-container h1{
+  margin-top: 0px;
+  font-size:20px;
+ }
+ .error-container h3{
+  font-size: 10px;
+ }
+ .error-btn button{
+  width: 100%;
+  padding:10px;
+  text-align: center;
+  margin:10px;
+ }
+}

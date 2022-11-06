@@ -1,0 +1,27 @@
+.error-boundary{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+.error-boundary .error-img{
+    width:50%;
+}
+.error-boundary .error-img img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.error-msg{
+    width:50%;
+    text-align: center;
+}
+.error-msg h2{
+    font-size:2rem;
+    font-weight: 700;
+}
+.error-msg p{
+    font-weight: 500;
+    font-size:1.4rem;
+}
