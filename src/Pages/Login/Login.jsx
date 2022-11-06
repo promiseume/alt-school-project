@@ -39,7 +39,6 @@ const AddUserForm = ({fullName,setFullName,password,setPassword}) => {
                     <input className="form-control input" value={password} onChange={(e) => handlePassword(e)}/>
                 </div>
                 <button disabled={!fullName && !password} type="submit" onClick={(e) => onLogin(e)}>Submit</button>
-                {!fullName && <p style={{color:'red'}}>Please fill the form</p>}
             </form>
         </div>
         </div>
