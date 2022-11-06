@@ -2,6 +2,8 @@
     display: block;
     font-size: 20px;
     color: rgb(84, 105, 212);
+    margin: 0;
+    padding: 0;
 }
 .form-header{
     display: flex;

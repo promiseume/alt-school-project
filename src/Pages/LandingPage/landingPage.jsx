@@ -11,7 +11,7 @@ export default function LandingPage({fullName}) {
     })
 
   return (
-       <section className="cover-container landing-page mx-auto">
+       <section className="landing-page">
            <div id={'container'}>
      <Nav/>
                <div className={'hero-header'}>

@@ -2,14 +2,10 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)), url('../../assets/landingpage.jpg');
     background-size: cover;
-    background-position: center center;
-    height: 100%;
+    background-position: center;
+    height: 100vh;
     min-height: 100%;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
     box-shadow: inset 0 0 5rem rgb(0 0 0 / 50%);
-
 }
 #container{
     margin:0 auto ;
@@ -17,7 +13,7 @@
 }
 .hero-header{
     text-align: center;
-    padding: 4rem 6rem 0 6rem;
+    padding: 8rem 7rem 0;
 }
 .hero-header h1 {
     font-family: 'Montserrat';
