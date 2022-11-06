@@ -1,12 +1,11 @@
 .forms-container h2{
     display: block;
     font-size: 20px;
-    line-height: 28px;
     color: rgb(84, 105, 212);
 }
 .form-header{
     display: flex;
-    align-content: center;
+   align-items: center;
 }
 .forms-container{
 padding: 1rem 2rem;
