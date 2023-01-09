@@ -15,9 +15,9 @@ export default function LandingPage({fullName}) {
            <div id={'container'}>
      <Nav/>
                <div className={'hero-header'}>
-       <h1>{localStorage.getItem(fullName) === null && !token ? 'Welcome to EliteAuth' : `Welcome ${localStorage.getItem('fullName')}`}</h1>
+       <h1>{localStorage.getItem('fullName') ? `Welcome ${localStorage.getItem('fullName')}`: 'Welcome to EliteAuth'}</h1>
                    <p>Here in this project,Set up fake userAuthContext using the context API to always carry out a fake authentication </p>
-                  <a href={'https://github.com/promiseume/alt-school-project'}><button>See Code</button></a>
+                  <a href={'https://github.com/promiseume/alt-school-project'}>See Code</a>
                </div>
            </div>
       </section>

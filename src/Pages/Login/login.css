@@ -1,9 +1,11 @@
 .forms-container h2{
     display: block;
     font-size: 20px;
-    color: rgb(84, 105, 212);
+    color:#fb9129;
     margin: 0;
     padding: 0;
+   text-align: center;
+   align-self: center;
 }
 .form-header{
     display: flex;
@@ -70,6 +72,6 @@ button{
     width: 100%;
     color:#FFFFFF;
     border: none;
-    background-color: rgb(84, 105, 212);
+    background-color: #0a0e27;
 }
 

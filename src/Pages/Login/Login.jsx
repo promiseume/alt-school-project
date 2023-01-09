@@ -9,18 +9,23 @@ const AddUserForm = ({fullName,setFullName,password,setPassword}) => {
     const navigate = useNavigate();
 
     const handleName =(e)=>{
-        setFullName(e.target.value)
-        localStorage.setItem('fullName', fullName);
+        setFullName(() => e.target.value)
     }
     const handlePassword=(e)=>{
         setPassword(e.target.value)
-        localStorage.setItem('password', password);
     }
-
-    useEffect(()=> {
+    const handleSubmit=(e)=>{
         localStorage.setItem('fullName', fullName);
         localStorage.setItem('password', password);
-    }, [token])
+        onLogin(e);
+        setFullName("")
+        setPassword("")
+        navigate('/')
+    }
+    // useEffect(()=> {
+    //     localStorage.setItem('fullName', fullName);
+    //     localStorage.setItem('password', password);
+    // }, [token])
     return (
         <>
         <div className={'login-container'}>
@@ -38,7 +43,7 @@ const AddUserForm = ({fullName,setFullName,password,setPassword}) => {
                     <label className="form-label">Password</label>
                     <input className="form-control input" value={password} onChange={(e) => handlePassword(e)}/>
                 </div>
-                <button disabled={!fullName && !password} type="submit" onClick={(e) => onLogin(e)}>Submit</button>
+                <button disabled={!fullName && !password} type="submit" onClick={handleSubmit}>Submit</button>
             </form>
         </div>
         </div>

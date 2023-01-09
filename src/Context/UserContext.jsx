@@ -6,19 +6,18 @@ const AuthContext = createContext({});
 
 export const AuthProvider = ({ children }) => {
     const [token, setToken] = useState(localStorage.getItem('token') );
-  const navigate = useNavigate();
 
     const handleLogin = async (e) => {
         e.preventDefault()
       const token = await fakeAuth();
       setToken(token);
         localStorage.setItem('token', token);
-        navigate('/')
     };
     const handleLogout = () => {
       setToken(null);
-      localStorage.setItem('token', null);
-      localStorage.setItem('fullName', null);
+      localStorage.setItem('token', "");
+      localStorage.setItem('fullName', "");
+      localStorage.setItem('password', "");
     };
   // useEffect(()=>{
   //

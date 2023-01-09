@@ -7,7 +7,7 @@ import Login from './Pages/Login/Login'
 
 
 function App() {
-    const [fullName, setFullName] = useState();
+    const [fullName, setFullName] = useState("");
     const [password, setPassword] = useState("");
   return (
     <AuthProvider>

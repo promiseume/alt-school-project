@@ -31,10 +31,10 @@ width:50%;
  align-items: center;
 }
 .error-btn button{
- width: 70%;
- padding:20px;
+ /* width: 50%; */
+ padding:12px 15px;
  text-align: center;
- margin: 10px;
+ margin:0 10px;
 }
 @media(max-width:961px){
  .error-container{
